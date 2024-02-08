@@ -23,5 +23,5 @@ sudo apt install python3-smbus
 sudo raspi-config<br>
   -Option 3 "Interface Options"<br>
     -Option I4 "I2C"<br>
-      Yes<br>
+      -Yes<br>
 
