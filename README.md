@@ -5,20 +5,20 @@ Python3 implementation for a RPi4 HAT containing LCD and Fan.
 Python3
 
 ## Dependencies:
-pil
-RPi.GPIO
+pil<br>
+RPi.GPIO<br>
 smbus
 
 
 ## Install deps:
-sudo apt update
-sudo apt install python3-pil
-sudo apt install python3-RPi.GPIO
+sudo apt update<br>
+sudo apt install python3-pil<br>
+sudo apt install python3-RPi.GPIO<br>
 sudo apt install python3-smbus
 
 ## I2C needs to be enabled for smbus functionality.
-sudo raspi-config
-  -Option 3 "Interface Options"
-    -Option I4 "I2C"
-      Yes
+sudo raspi-config<br>
+  -Option 3 "Interface Options"<br>
+    -Option I4 "I2C"<br>
+      Yes<br>
 
