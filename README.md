@@ -1,5 +1,8 @@
-# RPi4_LCD_FAN_HAT
-Python3 implementation for a RPi4 HAT containing LCD and Fan.
+# RPi_FLH
+Python3 implementation for a RPi FAN+LCD HAT with good features.
+
+LCD displays IP address and FAN status.<br>
+FAN on/off state controlled by CPU temp.
 
 ## Lang
 Python3
