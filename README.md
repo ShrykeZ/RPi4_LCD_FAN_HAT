@@ -4,7 +4,7 @@ Python3 implementation for a RPi FAN+LCD HAT with good features.
 LCD displays IP address and FAN status.<br>
 FAN on/off state controlled by CPU temp.
 
-## Lang
+## Language:
 Python3
 
 ## Dependencies:
