@@ -21,7 +21,7 @@ font = ImageFont.truetype(dir_path+'/Courier_New.ttf',13)
 
 image1 = Image.new('1', (show.width, show.height), "WHITE")
 draw = ImageDraw.Draw(image1)
-class POE_HAT_B:
+class RPi_FLH:
     def __init__(self,address = 0x20):
         self.i2c = smbus.SMBus(1)
         self.address = address#0x20
