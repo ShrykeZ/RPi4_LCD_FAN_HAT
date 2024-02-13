@@ -66,12 +66,12 @@ class SSD1306(object):
         image_monocolor = image.convert('1')
         imwidth, imheight = image_monocolor.size
         pixels = image_monocolor.load()
-        if(imwidth == self.width and imheight == self.height):
+        if(imwidth == self.width and imheight == self.height): # Horizontal
             for y in range(imheight):
                 for x in range(imwidth):
                     if pixels[x, y] == 0:
                         buf[x + int(y / 8) * self.width] &= ~(1 << (y % 8))
-        elif(imwidth == self.height and imheight == self.width):
+        elif(imwidth == self.height and imheight == self.width): # Vertical
             for y in range(imheight):
                 for x in range(imwidth):
                     newx = y
