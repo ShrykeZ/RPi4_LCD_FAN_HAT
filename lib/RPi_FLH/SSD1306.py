@@ -85,8 +85,8 @@ class SSD1306(object):
     def ShowImage(self, pBuf):
         for i in range(0, self.Page):            
             self.SendCommand(0xB0 + i)
-            self.SendCommand(0x00)
-            self.SendCommand(0x10)
-            for j in range(0, self.Column):
+            self.SendCommand(0x00) # Low
+            self.SendCommand(0x10) # High
+            for j in range(0, self.Column): # Write
                 self.SendData(pBuf[j+self.width*i])
 
